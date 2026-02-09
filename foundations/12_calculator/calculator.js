@@ -11,7 +11,7 @@ const sum = function(arr) {
 	return arr.reduce((sum, item) => sum + item, 0);
 };
 
-const multiply = function() {
+const multiply = function(arr) {
   return arr.reduce((sum, item) => sum * item, 1);
 };
 
@@ -21,8 +21,13 @@ const power = function(base, power) {
 
 const factorial = function(num) {
 
-  
-	return
+    if (num === 0) {
+      return 1;
+    }
+    else {
+      return num * factorial(num -1);
+    }
+
 };
 
 // Do not edit below this line
